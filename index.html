@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Surya - Software Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <h1 class="loader-text">⚡ Loading Siva Surya's Portfolio…</h1>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Particle Animation Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Programming Symbols Background Overlay -->
+    <div class="bg-overlay">
+        <div class="symbol">HTML</div>
+        <div class="symbol">SQL</div>
+        <div class="symbol">AI</div>
+        <div class="symbol">ML</div>
+        <div class="symbol">API</div>
+        <div class="symbol">PHP</div>
+        <div class="symbol">MySQL</div>
+        <div class="symbol">Python</div>
+        <div class="symbol">Java</div>
+        <div class="symbol">React</div>
+        <div class="symbol">Node.js</div>
+        <div class="symbol">Git</div>
+        <div class="symbol">GitHub</div>
+        <div class="symbol">Spring</div>
+        <div class="symbol">Hibernate</div>
+        <div class="symbol">MongoDB</div>
+        <div class="symbol">Express</div>
+        <div class="symbol">Angular</div>
+        <div class="symbol">Vue.js</div>
+        <div class="symbol">TypeScript</div>
+        <div class="symbol">C++</div>
+        <div class="symbol">C#</div>
+        <div class="symbol">Kotlin</div>
+        <div class="symbol">Swift</div>
+        <div class="symbol">Docker</div>
+        <div class="symbol">AWS</div>
+        <div class="symbol">Firebase</div>
+        <div class="symbol">Redux</div>
+        <div class="symbol">Bootstrap</div>
+        <div class="symbol">Sass</div>
+        <div class="symbol">Webpack</div>
+        <div class="symbol">npm</div>
+        <div class="symbol">&lt;/&gt;</div>
+        <div class="symbol">{}</div>
+        <div class="symbol">[]</div>
+        <div class="symbol">()</div>
+        <div class="symbol">===</div>
+        <div class="symbol">!=</div>
+        <div class="symbol">=&gt;</div>
+        <div class="symbol">async</div>
+        <div class="symbol">await</div>
+        <div class="symbol">function</div>
+        <div class="symbol">class</div>
+        <div class="symbol">import</div>
+        <div class="symbol">export</div>
+        <div class="symbol">const</div>
+        <div class="symbol">let</div>
+        <div class="symbol">var</div>
+        <div class="symbol">if</div>
+        <div class="symbol">else</div>
+        <div class="symbol">for</div>
+        <div class="symbol">while</div>
+        <div class="symbol">try</div>
+        <div class="symbol">catch</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Well come</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#highlights" class="nav-link">Highlights</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <p class="hero-greeting">Hello,</p>
+                    <h1 class="hero-name">I'm SIVASURYA</h1>
+                    <h2 class="hero-role-static">Software Developer</h2>
+                    <div class="hero-contact">
+                        <p class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919344075887">+91 9344075887</a>
+                        </p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-project">Got a Project?</a>
+                        <a href="#" class="btn btn-resume" id="resume-btn">My Resume</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <div class="coding-symbols">
+                            <span class="symbol-float" data-symbol="{ }">{ }</span>
+                            <span class="symbol-float" data-symbol="</>"><i class="fab fa-html5"></i></span>
+                            <span class="symbol-float" data-symbol="JS"><i class="fab fa-js-square"></i></span>
+                            <span class="symbol-float" data-symbol="React"><i class="fab fa-react"></i></span>
+                            <span class="symbol-float" data-symbol="Java">☕</span>
+                            <span class="symbol-float" data-symbol="Python"><i class="fab fa-python"></i></span>
+                            <span class="symbol-float" data-symbol="CSS"><i class="fab fa-css3-alt"></i></span>
+                            <span class="symbol-float" data-symbol="Git"><i class="fab fa-git-alt"></i></span>
+                            <span class="symbol-float" data-symbol="Node"><i class="fab fa-node-js"></i></span>
+                            <span class="symbol-float" data-symbol="SQL">🗄️</span>
+                            <span class="symbol-float" data-symbol="API">⚡</span>
+                            <span class="symbol-float" data-symbol="Code">💻</span>
+                            <span class="symbol-float" data-symbol="Spring">🍃</span>
+                            <span class="symbol-float" data-symbol="MySQL"><i class="fas fa-database"></i></span>
+                            <span class="symbol-float" data-symbol="Bootstrap"><i class="fab fa-bootstrap"></i></span>
+                            <span class="symbol-float" data-symbol="PHP"><i class="fab fa-php"></i></span>
+                            <span class="symbol-float" data-symbol="MongoDB">🍃</span>
+                            <span class="symbol-float" data-symbol="Docker"><i class="fab fa-docker"></i></span>
+                            <span class="symbol-float" data-symbol="AWS"><i class="fab fa-aws"></i></span>
+                            <span class="symbol-float" data-symbol="VS Code">📝</span>
+                            <span class="symbol-float" data-symbol="GitHub"><i class="fab fa-github"></i></span>
+                            <span class="symbol-float" data-symbol="Linux"><i class="fab fa-linux"></i></span>
+                            <span class="symbol-float" data-symbol="Terminal">⌨️</span>
+                            <span class="symbol-float" data-symbol="AI">🤖</span>
+                            <span class="symbol-float" data-symbol="Brackets">[ ]</span>
+                            <span class="symbol-float" data-symbol="Function">fn()</span>
+                            <span class="symbol-float" data-symbol="Array">[ ]</span>
+                            <span class="symbol-float" data-symbol="Object">{ }</span>
+                            <span class="symbol-float" data-symbol="Arrow">=></span>
+                            <span class="symbol-float" data-symbol="Class">class</span>
+                        </div>
+                        <img src="../img/Siva surya .jpg" alt="Siva Surya" id="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate <span class="highlight">Java Full Stack Developer Trainee</span> currently training
+                    at <span class="highlight">TAP Academy</span>. Having completed my <span class="highlight">BSc
+                        Computer Science</span> degree in 2025, I'm now specializing in Java full-stack development,
+                    mastering technologies like Spring Boot, Hibernate, React, and modern development practices.</p>
+                <p>With a strong foundation in programming fundamentals and hands-on experience with modern web
+                    technologies, I bring <span class="highlight">creativity</span> and <span
+                        class="highlight">technical expertise</span> to every project. I'm also actively involved in
+                    leadership roles and community service, having served as President of the Interact Club (2018-2019)
+                    and Secretary of AMSM (2023-2025) with 300+ active members.</p>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="neon-light"></div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2025 - Present</div>
+                        <h3>🚀 Full Stack Java Developer Training</h3>
+                        <p>Currently training at TAP Academy, mastering Java full-stack development including Spring
+                            Boot, Hibernate, React, and modern development practices.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2025</div>
+                        <h3>🎓 BSc Computer Science - Graduated</h3>
+                        <p>Successfully completed my Bachelor of Science in Computer Science degree with specialization
+                            in software development, data structures, algorithms, and modern programming paradigms.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2024</div>
+                        <h3>📊 NAAC Data Management Officer</h3>
+                        <p>Led data management initiatives and quality assurance processes for institutional
+                            accreditation with 100% accuracy.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2024</div>
+                        <h3>💼 LocBiz Connect - Final Year Project</h3>
+                        <p>Developed a comprehensive local business networking platform with advanced features using
+                            PHP, MySQL, and modern web technologies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2023 - 2025</div>
+                        <h3>📋 Secretary - AMSM Club</h3>
+                        <p>Served as Secretary of AMSM club with 300+ active members, coordinating community service
+                            activities, social events, and organizational initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2018 - 2019</div>
+                        <h3>👑 President - Interact Club</h3>
+                        <p>Led community service initiatives and organized various social impact programs, managing a
+                            team of 50+ members during high school years.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">2023</div>
+                        <h3>🎨 Canva Trainer</h3>
+                        <p>Conducted training sessions on design principles and digital content creation for 100+
+                            participants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-row">
+                        <div class="skill-item" data-skill="HTML5">
+                            <i class="fab fa-html5" style="color: #E34F26;"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <i class="fab fa-js-square" style="color: #F7DF1E;"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <i class="fab fa-react" style="color: #61DAFB;"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend & Database</h3>
+                    <div class="skills-row">
+                        <div class="skill-item" data-skill="PHP">
+                            <i class="fab fa-php" style="color: #777BB4;"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                            <i class="fas fa-database" style="color: #4479A1;"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="SQL">
+                            <i class="fas fa-database" style="color: #336791;"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="Node.js">
+                            <i class="fab fa-node-js" style="color: #339933;"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item" data-skill=".NET">
+                            <i class="fas fa-code" style="color: #512BD4;"></i>
+                            <span>.NET</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-row">
+                        <div class="skill-item" data-skill="Python">
+                            <i class="fab fa-python" style="color: #3776AB;"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-skill="Java">
+                            <i class="fab fa-java" style="color: #ED8B00;"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item" data-skill="C">
+                            <i class="fas fa-code" style="color: #A8B9CC;"></i>
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skills-row">
+                        <div class="skill-item" data-skill="Git">
+                            <i class="fab fa-git-alt" style="color: #F05032;"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item" data-skill="GitHub">
+                            <i class="fab fa-github" style="color: #181717;"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item" data-skill="VS Code">
+                            <i class="fas fa-code" style="color: #007ACC;"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item" data-skill="AI">
+                            <i class="fas fa-robot" style="color: #FF6B35;"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="skill-item" data-skill="Canva">
+                            <i class="fas fa-palette" style="color: #00C4CC;"></i>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../img/project1.jpg" alt="LocBiz Connect"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvY0JpeiBDb25uZWN0PC90ZXh0Pjwvc3ZnPg=='">
+                    </div>
+                    <div class="project-content">
+                        <h3>🌐 LocBiz Connect</h3>
+                        <p>A comprehensive local business networking platform connecting entrepreneurs and customers.
+                        </p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links-card">
+                            <a href="https://locbiz-demo.netlify.app" target="_blank" class="btn btn-primary">🚀 Live
+                                Demo</a>
+                            <a href="https://github.com/sivasurya-coder/locbiz-connect" target="_blank"
+                                class="btn btn-secondary">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../img/project2.jpg" alt="Portfolio Website"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlBvcnRmb2xpbzwvdGV4dD48L3N2Zz4='">
+                    </div>
+                    <div class="project-content">
+                        <h3>✨ Portfolio Website</h3>
+                        <p>Modern, responsive portfolio showcasing my skills and projects with stunning animations.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links-card">
+                            <a href="https://sivasurya-portfolio.netlify.app" target="_blank" class="btn btn-primary">🚀
+                                Live Demo</a>
+                            <a href="https://github.com/sivasurya-coder/portfolio" target="_blank"
+                                class="btn btn-secondary">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../img/project3.jpg" alt="E-Commerce Platform"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkUtQ29tbWVyY2U8L3RleHQ+PC9zdmc+'">
+                    </div>
+                    <div class="project-content">
+                        <h3>🛒 E-Commerce Platform</h3>
+                        <p>Full-featured e-commerce platform with payment integration and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                        </div>
+                        <div class="project-links-card">
+                            <a href="https://ecommerce-demo.netlify.app" target="_blank" class="btn btn-primary">🚀 Live
+                                Demo</a>
+                            <a href="https://github.com/sivasurya-coder/ecommerce" target="_blank"
+                                class="btn btn-secondary">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../img/project4.jpg" alt="Task Management App"
+                            onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlRhc2sgTWFuYWdlcjwvdGV4dD48L3N2Zz4='">
+                    </div>
+                    <div class="project-content">
+                        <h3>📋 Task Management App</h3>
+                        <p>Interactive task management application with real-time collaboration features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links-card">
+                            <a href="https://taskmanager-demo.netlify.app" target="_blank" class="btn btn-primary">🚀
+                                Live Demo</a>
+                            <a href="https://github.com/sivasurya-coder/task-manager" target="_blank"
+                                class="btn btn-secondary">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dummy Project Links Row -->
+            <div class="project-links">
+                <a href="#" class="project-link">LocBiz Connect</a>
+                <a href="#" class="project-link">Portfolio</a>
+                <a href="#" class="project-link">Small Business Website</a>
+                <a href="#" class="project-link">App Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights Section -->
+    <section id="highlights" class="highlights">
+        <div class="container">
+            <h2 class="section-title">Key Highlights</h2>
+            <div class="highlights-carousel">
+                <div class="carousel-container">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Web Development Certification</h3>
+                        <p>Completed advanced web development course with focus on modern frameworks and best practices.
+                        </p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Leadership Excellence</h3>
+                        <p>Successfully led multiple community initiatives as Security of AMSM President of Interact
+                            Club, impacting 500+
+                            members.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Led and collaborated with clubs and NGOs to organize events for 50 to 500 people, ensuring
+                            timely delivery and smooth coordination across teams.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation Award</h3>
+                        <p>Recognized for innovative solutions in data management and process optimization.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Academic Excellence</h3>
+                        <p>Maintaining high academic standards while actively participating in extracurricular
+                            activities.</p>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-contact">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <div class="social-links">
+                        <a href="https://github.com/sivasurya-coder" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/siva-surya-429416310/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Siva Surya. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="resume-content">
+                <h2>Resume</h2>
+                <p>Resume functionality will be implemented here. You can add a PDF viewer or detailed resume content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
